@@ -84,6 +84,7 @@ database["kevin"] = img_to_encoding("images/kevin.jpg", FRmodel)
 database["felix"] = img_to_encoding("images/felix.jpg", FRmodel)
 database["benoit"] = img_to_encoding("images/benoit.jpg", FRmodel)
 database["arnaud"] = img_to_encoding("images/arnaud.jpg", FRmodel)
+database["david"] = img_to_encoding("images/rsz_23836.jpg", FRmodel)
 
 
 # GRADED FUNCTION: verify
@@ -123,8 +124,8 @@ def verify(image_path, identity, database, model):
 
     return dist, door_open
 
-verify("images/camera_0.jpg", "younes", database, FRmodel)
-verify("images/camera_2.jpg", "kian", database, FRmodel)
+#verify("images/camera_0.jpg", "david", database, FRmodel)
+#verify("images/camera_2.jpg", "kian", database, FRmodel)
 
 
 # GRADED FUNCTION: who_is_it
@@ -174,4 +175,4 @@ def who_is_it(image_path, database, model):
     return min_dist, identity
 
 
-who_is_it("images/camera_0.jpg", database, FRmodel)
+who_is_it("images/rsz_david.png", database, FRmodel)
